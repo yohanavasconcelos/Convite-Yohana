@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+:root{
+    --cor-nome: rgba(184, 134, 11);
+    --cor-principal: rgb(74, 44, 28);
+    --fonte-nome: "Cinzel", serif;
+    --fonte-principal: "IM Fell English SC", serif;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #0a0a0a;
+}
+
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+}   
+.convite {
+    width: 100%;
+    max-width: 480px;          
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem) 2rem;
+
+    background-image: url('img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.nome{
+    margin-top: -1.2em;
+    font-family: var(--fonte-nome);
+    font-weight: 500;
+    font-size: 3em;
+    background: linear-gradient(
+        180deg,
+        rgb(255, 230, 150),
+        rgb(200, 150, 40),
+        rgb(140, 90, 10),
+        rgb(80, 50, 10)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-right: 1.5em;
+    transform: rotate(-5deg);
+    /* display: inline-block; */
+}
+
+.ano{
+    padding-top: -2em;
+    padding-left: 0.5em;
+}
+
+.descricao{
+    font-size: 1.3em;
+    padding: 5em 1em 0;
+}
+
+.dataHora{
+    display: flex;
+    font-size: 1.3em;
+    margin-top: -1.6em;
+    margin-left: 2.6em;
+}
+
+.confirmacao{
+    margin-top: 0.9em;
+    padding-left: 0.5em;
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+/* style da classe aceitarMissao */
+
+.chamado{
+    font-size: 1.2em;
+    padding: 7.2em 2.5em 0;
+}
+
+.nomeConfirmacao{
+    margin-top: 0.5em;
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+.confirmacaoTotal{
+    margin-top: 16em;
+    padding: 0 2.5em;
+    font-size: 1em;
+}
+
+/* style da classe convite */
+.localizacao{
+    margin-top: 12em;
+    color: rgb(255, 248, 220);
+    font-weight: 800;
+}
+
+@media screen and (min-width: 430px) and (max-width: 446px) {
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .descricao{
+        font-size: 1em;
+        padding: 3.5em 2em 0;
+    }
+    .dataHora{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 1.8em;
+    }
+
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
+
+@media screen and (min-width: 412px) and (max-width: 428px) {
+    .nome-ano{
+        margin-top: 2em;
+    }
+    .descricao{
+        font-size: 1em;
+        padding: 3.5em 2em 0;
+    }
+    .dataHora{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 1.8em;
+    }
+
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (max-width: 392px){
+    .nome-ano{
+        margin-top: 2em;
+    }
+    .descricao{
+        font-size: 1em;
+        padding: 9em 2em 0;
+    }
+    .dataHora{
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 1.8em;
+    }
+
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
+
+@media screen and (min-width: 344px) and (max-width: 362px) {
+    .nome-ano{
+        margin-top: 2em;
+    }
+    .descricao{
+        font-size: 0.9em;
+        padding: 2.5em 1em 0;
+    }
+    .dataHora{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 1.8em;
+    }
+
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-height: 658px) and (max-height: 668px) {
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .nome{
+        font-size: 2.5em;
+    }
+    .descricao{
+        font-size: 1em;
+        padding: 4.2em 2em 0;
+    }
+    .dataHora{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 1.8em;
+    }
+
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-height: 896px) and (max-height: 934px) {
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .nome{
+        font-size: 2.5em;
+    }
+    .descricao{
+        padding: 10em 2em 0;
+    }
+    .dataHora{
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 1.8em;
+    }
+
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
