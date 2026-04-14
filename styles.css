@@ -72,7 +72,7 @@ body{
 
 .descricao{
     font-size: 1.3em;
-    padding: 5em 1em 0;
+    padding: 5.5em 1em 0;
 }
 
 .dataHora{
@@ -102,26 +102,30 @@ body{
     color: var(--cor-principal);
 }
 
+/* style da classe convite */
+
 .confirmacaoTotal{
     margin-top: 16em;
     padding: 0 2.5em;
     font-size: 1em;
 }
 
-/* style da classe convite */
 .localizacao{
     margin-top: 12em;
     color: rgb(255, 248, 220);
     font-weight: 800;
 }
 
-@media screen and (min-width: 430px) and (max-width: 446px) {
+@media (min-height: 640px){
     .nome-ano{
         margin-top: 3em;
     }
+    .nome{
+        font-size: 2.5em;
+    }
     .descricao{
         font-size: 1em;
-        padding: 3.5em 2em 0;
+        padding: 5em 2em 0;
     }
     .dataHora{
         font-size: 1em;
@@ -129,7 +133,8 @@ body{
     }
 
     .missaoDuvidosa{
-        margin-top: 1.8em;
+        font-size: 0.8em;
+        margin-top: 6em;
     }
 
     .aceitacao{
@@ -141,85 +146,6 @@ body{
     }
 }
 
-
-@media screen and (min-width: 412px) and (max-width: 428px) {
-    .nome-ano{
-        margin-top: 2em;
-    }
-    .descricao{
-        font-size: 1em;
-        padding: 3.5em 2em 0;
-    }
-    .dataHora{
-        font-size: 1em;
-        margin-left: 1em;
-    }
-
-    .missaoDuvidosa{
-        margin-top: 1.8em;
-    }
-
-    .aceitacao{
-        margin-top: -2.5em;
-    }
-
-    .localizacao{
-        margin-top: 5em;
-    }
-}
-
-@media screen and (max-width: 392px){
-    .nome-ano{
-        margin-top: 2em;
-    }
-    .descricao{
-        font-size: 1em;
-        padding: 9em 2em 0;
-    }
-    .dataHora{
-        font-size: 1.2em;
-        margin-left: 1em;
-    }
-
-    .missaoDuvidosa{
-        margin-top: 1.8em;
-    }
-
-    .aceitacao{
-        margin-top: -2.5em;
-    }
-
-    .localizacao{
-        margin-top: 5em;
-    }
-}
-
-
-@media screen and (min-width: 344px) and (max-width: 362px) {
-    .nome-ano{
-        margin-top: 2em;
-    }
-    .descricao{
-        font-size: 0.9em;
-        padding: 2.5em 1em 0;
-    }
-    .dataHora{
-        font-size: 1em;
-        margin-left: 1em;
-    }
-
-    .missaoDuvidosa{
-        margin-top: 1.8em;
-    }
-
-    .aceitacao{
-        margin-top: -2.5em;
-    }
-
-    .localizacao{
-        margin-top: 5em;
-    }
-}
 
 @media screen and (min-height: 658px) and (max-height: 668px) {
     .nome-ano{
@@ -238,7 +164,8 @@ body{
     }
 
     .missaoDuvidosa{
-        margin-top: 1.8em;
+        margin-top: 5em;
+        font-size: 0.8em;
     }
 
     .aceitacao{
@@ -249,6 +176,119 @@ body{
         margin-top: 5em;
     }
 }
+
+@media screen and (min-height: 736px) and (max-height: 740px){
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .nome{
+        font-size: 2.5em;
+    }
+    .descricao{
+        font-size: 1em;
+        padding: 5.7em 2em 0;
+    }
+    .dataHora{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        font-size: 0.8em;
+        margin-top: 7em;
+    }
+
+    .aceitacao{
+        margin-top: 0.2em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-height: 825.60px){
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .descricao{
+        padding: 8em 2em 0;
+    }
+    .dataHora{
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 8em;
+    }
+
+    .aceitacao{
+        margin-top: 0.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-height: 882px){
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .nome{
+        font-size: 2.5em;
+    }
+    .descricao{
+        font-size: 1.2em;
+        padding: 8em 2em 0;
+    }
+    .dataHora{
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 12em;
+    }
+
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-height: 844px){
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .nome{
+        font-size: 2.5em;
+    }
+    .descricao{
+        font-size: 1.2em;
+        padding: 8em 2em 0;
+    }
+    .dataHora{
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        margin-top: 6em;
+    }
+
+    .aceitacao{
+        margin-top: 2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
 
 @media screen and (min-height: 896px) and (max-height: 934px) {
     .nome-ano{
@@ -265,14 +305,14 @@ body{
     }
 
     .missaoDuvidosa{
-        margin-top: 1.8em;
+        margin-top: 12em;
     }
 
     .aceitacao{
-        margin-top: -2.5em;
+        margin-top: 3em;
     }
 
     .localizacao{
-        margin-top: 5em;
+        margin-top: 7em;
     }
 }
