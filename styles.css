@@ -153,6 +153,10 @@ body{
         margin-top: 8.5em;
     }
 
+    .chamado{
+        margin-top: 5em;
+    }
+
     .aceitacao{
         margin-top: -2.5em;
     }
@@ -171,7 +175,7 @@ body{
     }
     .descricao{
         font-size: 1em;
-        padding: 8em 2em 0;
+        padding: 5em 2em 0;
     }
     .dataHora{
         font-size: 1em;
