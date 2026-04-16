@@ -10,11 +10,16 @@
     <main class="convite">
         <div class="missaoDuvidosa">
             <h1 class="chamado">Ó corajoso (ou inconsequente) jogador… qual é o seu nome para que possa registrar para essa missão?</h1>
-            <input type="text" class="name" required>
+            <input type="text" id="name" required>
             
         </div>
-        <a href="convite.html" class="nomeConfirmacao">Aceitar missão duvidosa</a>
+        <a href="convite.html" class="nomeConfirmacao" id="confirmacao">Aceitar missão duvidosa</a>
         
+        <div id="popup" class="popup">
+            <p>Você aceitou a missão… mas nem disse seu nome 😏</p>
+            <button onclick="fecharPopup()">Fechar</button>
+        </div>
     </main>
 </body>
+<script src="script.js"></script>
 </html>
