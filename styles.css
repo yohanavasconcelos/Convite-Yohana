@@ -132,6 +132,36 @@ body{
     display: none;
 }
 
+@media screen and (min-weight: 412px){
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .nome{
+        font-size: 2.5em;
+    }
+    .descricao{
+        font-size: 1em;
+        padding: 5em 2em 0;
+    }
+    .dataHora{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        font-size: 0.8em;
+        margin-top: 6em;
+    }
+
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+
+    .localizacao{
+        margin-top: 5em;
+    }
+}
+
 @media (min-height: 640px){
     .nome-ano{
         margin-top: 3em;
