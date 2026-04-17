@@ -20,7 +20,6 @@ html, body {
 }
 
 body{
-    height: 100%;
     display: flex;
     justify-content: center; 
     align-items: flex-start;
@@ -152,7 +151,51 @@ body{
     font-weight: 800;
 }
 
-@media screen and (min-width: 412px) and (max-width: 445px){
+@media screen and (min-width: 412px){
+    .nome-ano{
+        margin-top: 3em;
+    }
+    .nome{
+        font-size: 2.5em;
+    }
+    .descricao{
+        font-size: 1em;
+        padding: 8em 2em 0;
+        margin-top: 5em;
+    }
+    .dataHora{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .missaoDuvidosa{
+        font-size: 0.8em;
+        margin-top: 8.5em;
+    }
+
+    
+    .chamado{
+        margin-top: 5em;
+    }
+    
+    .aceitacao{
+        margin-top: -2.5em;
+    }
+    
+    .localizacao{
+        margin-top: 5em;
+    }
+
+    #nome{
+        margin-top: 0.8em;
+    }
+
+    .confirmacaoTotal{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 445px){
     .nome-ano{
         margin-top: 3em;
     }
