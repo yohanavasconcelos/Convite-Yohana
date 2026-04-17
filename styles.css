@@ -151,7 +151,7 @@ body{
     font-weight: 800;
 }
 
-@media screen and (min-width: 412px){
+@media screen and (max-width: 480px){
     .nome-ano{
         margin-top: 3em;
     }
@@ -161,7 +161,7 @@ body{
     .descricao{
         font-size: 1em;
         padding: 8em 2em 0;
-        margin-top: 5em;
+        margin-top: 6em;
     }
     .dataHora{
         font-size: 1em;
