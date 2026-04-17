@@ -1,18 +1,21 @@
-const nomeJogador = document.getElementById('nome');
 const botao = document.getElementById('confirmacao');
 
-botao.addEventListener('click', (e) => {
-    e.preventDefault();
-    
-    const nome = document.getElementById('name');
+if(botao){
+  botao.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      const nome = document.getElementById('name');
+  
+      if(nome.value.length === 0){
+          mostrarPopup();
+      }else{
+          localStorage.setItem('nomeJogador', nome.value);
+          window.location.href = 'convite.html';
+      }
+  
+  });
 
-    if(nome.value.length === 0){
-        mostrarPopup();
-    }else{
-        window.location.href = 'convite.html';
-    }
-
-});
+}
 
 
 function mostrarPopup() {
@@ -23,3 +26,9 @@ function fecharPopup() {
   document.getElementById("popup").style.display = "none";
 }
 
+
+const nomeJogador = document.getElementById('nome');
+if (nomeJogador) {
+  const nomeSalvo = localStorage.getItem('nomeJogador');
+  nomeJogador.innerHTML = nomeSalvo || '';
+}
